@@ -1,0 +1,12 @@
+section.portfolio
+    .l-center
+        h2.section__head
+            | Our
+            span.strong  Portfolio
+        ul.portfolio__list
+            -for(var i=1; i<7; i++)
+                li.portfolio__item
+                    a.portfolio__link
+                        img.portfolio__img(src="/assets/pic/portfolio/"+i+".jpg", alt="portfolio "+i+"")
+        +btn('a','btn__trans_blue','See all')
+// end portfolio

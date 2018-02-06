@@ -1,0 +1,12 @@
+section.contacts-form
+    .l-center
+        form.contacts-form__form(action="/", method="get")
+            .left-form-field
+                input.contacts-form__input(type="text", placeholder="Name*:", name="name")
+                input.contacts-form__input(type="text", placeholder="Email*:", name="email")
+                input.contacts-form__input(type="text", placeholder="Phone*:", name="phone")
+                input.btn__blue(type="reset", value="Reset")
+            .right-form-field
+                textarea.contacts-form__textarea(placeholder="Message*:")
+                input.btn__blue(type="submit", value="Send")
+// contacts-form

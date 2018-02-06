@@ -1,0 +1,16 @@
+section.about
+    .l-center
+        h2.section__head
+            span.strong About
+            |  Us
+        -var headArray = ["Work Experience", "Job Opportunities", "Practical Courses", "Business Travel"]
+        -var contentArray = ["Have you ever faced a situation when you could not get the desired job only because you were inexperienced? Forget that awful feeling! Probations, that we provide, will help you to get valuable skills and, of course, special certificates for confirmation.","We regularly hold out vacancies, that are interesting for ambitious people, who go in different areas. You can easily try to get a job at any point of the world and an opportunity for self-actualization.","For those who are not ready to rest on laurels, our company organizes occupational up-grade trainings and business trainings. In 150 countries and 1050 cities we help people to improve their skills, to learn how to make a good career.","Attending our events, you meet diverse personalities from all over the world. You can easily exchange the experience and get acquainted with real profs. GLOBY also gives you a good opportunity for traveling, and discovering new places, you have never been to."]
+        ul.about__list
+            -for(var i=0, j=0; i<headArray.length, j<contentArray.length; i++, j++)
+                li.about__item
+                    span.about__item-num= i+1
+                    h3.about__item-head= headArray[i]
+                    .about__item-content
+                        p= contentArray[j]
+                    +btn('a','btn_blue','Read more1')
+// end about

@@ -1,0 +1,19 @@
+secion.contacts
+    .l-center
+        h2.section__head
+            span.strong Contacts
+        .contacts__address The Company Name Inc. 9870 St Vincent Place, Glasgow, DC 45 Fr 45.
+        -var phones = ["+18006036035","+18008899898"]
+        ul.contacts-phone__list
+            -for(var i=0;i<phones.length; i++)
+                li.contacts-phone__item
+                    a.contacts-phone__link(href=`tel:${phones[i]}`)= phones[i]
+        -var emails = ["mail@demolink.org","mail2@demolink.org"]
+        ul.contacts-email__list
+            -for(var i=0;i<emails.length;i++)
+                li.contacts-email__item
+                    a.contacts-email__link(href=`mailto:${emails[i]}`)= emails[i]
+
+        include ../sections/socials
+        include ../sections/formContact
+// end contacts

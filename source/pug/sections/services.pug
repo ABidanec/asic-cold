@@ -1,0 +1,19 @@
+section.services
+    .l-center
+        h2.section__head
+            | Our
+            span.strong Services
+        -var icons = ["compass","cube","cogs","briefcase"]
+        -var heads = ["Probation program","Up-grade program","Business-creation program","Outplacement program"]
+        -var texts = ["If you want to get a good job, but do not have enough experience - join GLOBY probation program. Our specialists will help you find and choose a probation in big corporations and famous companies, according to your wishes and needs.","You are dreaming about brilliant career, but it is too hard for you to climb the career ladder? So, GLOBY up-grade program is for you! With the help of the best lecturers and profs you will improve requisite skills.","Starting own business is not an easy thing, when you are not a participant of GLOBY business-creation program. Successful businessmen will explain you how to develop new business step by step and to create prosperous product.","According to the statistics, each alternate has problems with finding a good job. If you do not want to be one of them, GLOBY outplacement program is exactly what you need. We search for vacancies so that we always have what to suggest you."]
+
+        ul.services__list
+            -for(var i = 0; i<icons.length && i<heads.length && i<texts.length; i++)
+                li.services__item
+                    div(class=`services__icon.services__icon_${icons[i]}`)
+                    .services__cont
+                        h3.services__head= heads[i]
+                        .services__desc
+                            p= texts[i]
+        +btn('a','btn__trans-blue','Read more')
+// end services

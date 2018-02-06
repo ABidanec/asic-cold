@@ -1,0 +1,8 @@
+//- tagName - имя тега кнопки (a, button)
+//- className - имя класса тега
+//- contentBtn - контент кнопки
+mixin btn(tagName, className, contentBtn)
+    if tagName === 'a'
+        #{tagName}(class=`${className}` href="#") #{contentBtn}
+    if tagName === 'button'
+        #{tagName}(class=`${className}`) #{contentBtn}

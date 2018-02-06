@@ -1,0 +1,13 @@
+-var categories = ["Home","About","Portfolio","Blog","Contacts"];
+-var sub_categories = ["Testimonials","Achives","FAQs"]
+
+ul.nav__list
+    each item, index in categories
+        li.nav__item
+            a.nav__link(href="#")= item
+            if index === 1
+                ul.sub-nav__list
+                    each item in sub_categories
+                        li.sub-nav__item
+                            a.sub-nav__link(href="#")= item
+// end nav
