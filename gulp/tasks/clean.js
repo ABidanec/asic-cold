@@ -7,7 +7,11 @@
 module.exports = function () {
     $.gulp.task('clean', function(){
         return $.del([
-            'build'
+            'build/*.html',
+            'build/assets/css',
+            '!build/assets/fonts',
+            '!build/assets/img',
+            '!build/assets/pic'
         ]);
     });
 };

@@ -1,0 +1,14 @@
+.team{
+  padding:2em 0;
+}
+  .team__item{
+    @extend .about__item;
+    border: none;
+  }
+    .team__img{
+      width: 100%;
+    }
+    .team__head{
+      color: $base_blue_c;
+      text-align: center;
+    }

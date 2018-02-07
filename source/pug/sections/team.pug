@@ -1,15 +1,15 @@
-section.team
+section.team.clearfix
     .l-center
         h2.section__head Our
-            span.strong Team
+            span.strong  Team
         -var nameArray = ["John Franklin", "Barbara Nilson", "Mark Pool", "Jessica Right"]
         -var descriptionArray = ["The founder of GLOBY; the head of the company. Leading coach and trainer of GLOBY.","First subprincipal; lecturer. First-rate organizer and curator of GLOBY probation program.","One of the leading GLOBY coaches and trainers. The curator of GLOBY up-grade and outplacement programs.","One of the leading GLOBY coaches and trainers. The curator of GLOBY business-creation program."]
         ul.team__list
             -for(var i=0, j=0; i<nameArray.length, j<descriptionArray.length; i++, j++)
                 li.team__item
-                    img.team__img(src="/assets/pic/team/"+i+".jpg", alt="worker "+i)
+                    img.team__img(src="/assets/pic/team/"+(i+1)+".jpg", alt="worker "+i)
                     .team__content
                         h3.team__head= nameArray[i]
                         p= descriptionArray[j]
-                    +btn('a', 'btn__blue','Read more')
+                    +btn('a', 'btn_blue_gray','Read more')
 // end team

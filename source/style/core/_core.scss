@@ -1,0 +1,72 @@
+/**
+  Base style settings
+*/
+
+@import "core/core_var";
+
+.clearfix{
+
+  zoom: 1;
+
+  &:after,
+  &:before{
+    content: "";
+    display: table;
+  }
+
+  &:after{
+    clear: both;
+  }
+}
+
+.l-center{
+  width: $site_w_percent;
+  margin: 0 auto;
+}
+/* footer bottom */
+html, body{
+  height: 100%;
+
+  font-size: 1em;
+  font-family: $base_font, sans-serif;
+  color: $base_font_c;
+}
+
+.l-wrapper{
+  position: relative;
+  min-height: 100%;
+  height: auto !important;
+  overflow: hidden;
+
+  &:after{
+    content: "";
+    display: block;
+    height: $footer_h;
+  }
+}
+
+.footer{
+  height:$footer_h;
+  margin: -$footer_h 0 0;
+  zoom: 1;
+}
+/* end footer bottom */
+ul{
+  list-style: none;
+}
+
+/*section head */
+.section__head{
+  font-family: $droidSans_font, $base_font, sans-serif;
+  font-size: $section_head_font_s;
+  text-align: center;
+}
+/* end section head*/
+
+.strong{
+  font-weight:700;
+}
+
+.blue-c{
+  color: $base_blue_c;
+}

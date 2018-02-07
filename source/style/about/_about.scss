@@ -1,0 +1,27 @@
+$about_bg: '../img/about_bg.jpg';
+.about{
+  background: url($about_bg) no-repeat top center;
+  background-size: cover;
+  padding: 2em 0;
+}
+  .about__item{
+    float: left;
+    vertical-align: top;
+    width: 20%;
+    padding: 2%;
+    border-left: 1px solid #fff;
+  }
+    .about__item-num{
+      display: block;
+      text-align: center;
+      font-weight: 700;
+      color: $base_blue_c;
+      font-size: 14em;
+    }
+    .about__item-head,
+    .about__item-content{
+      margin: 0 0 2em 0;
+    }
+    .about__item-head{
+      text-align: center;
+    }

@@ -1,11 +1,11 @@
 -var categories = ["Home","About","Portfolio","Blog","Contacts"];
--var sub_categories = ["Testimonials","Achives","FAQs"]
+-var sub_categories = ["привет привет пррррррррррррррррррррривет","Achives","FAQs"]
 
 ul.nav__list
     each item, index in categories
         li.nav__item
             a.nav__link(href="#")= item
-            if index === 1
+            if index === 1 || index === 2
                 ul.sub-nav__list
                     each item in sub_categories
                         li.sub-nav__item

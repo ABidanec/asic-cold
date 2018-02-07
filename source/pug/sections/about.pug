@@ -1,4 +1,4 @@
-section.about
+section.about.clearfix
     .l-center
         h2.section__head
             span.strong About
@@ -11,6 +11,8 @@ section.about
                     span.about__item-num= i+1
                     h3.about__item-head= headArray[i]
                     .about__item-content
+                        if i === 2
+                            p Have you ever faced a situation when you could not get the desired
                         p= contentArray[j]
-                    +btn('a','btn_blue','Read more1')
+                    +btn('a','btn_blue_gray','Read more1')
 // end about

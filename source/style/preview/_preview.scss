@@ -1,0 +1,26 @@
+$preview_bg: '../img/preview_bg.jpg';
+
+.preview{
+  background: url($preview_bg) no-repeat top center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 8em 0;
+}
+  .preview__head{
+    font-family: $gruppo_font, $base_font, sans-serif;
+    font-size: 7.9375em;
+    font-weight: 100;
+    margin: 0 0 0.2em 0;
+  }
+.preview__content{
+  p{
+    font-size: 0.9375em;
+    margin: 2em 0;
+  }
+}
+  .preview__content-big{
+    font-size: 3.4375em;
+    font-weight: 700;
+  }
+

@@ -1,0 +1,82 @@
+$menu_font_s: 1.3125em;
+
+.header{
+  //padding: 1em 0;
+}
+  .logo{
+    display: block;
+    float: left;
+    margin: 1em 0 0 1em;
+  }
+    .logo__link{
+      text-decoration: none;
+      font-size: 3.5em;
+      font-weight: 700;
+      color: $base_font_c;
+      padding:0 0.2em 0 0;
+      @include transition($time);
+
+      &:hover{
+        color: $base_blue_c;
+        @include transition($time);
+      }
+    }
+      .logo__img{
+        padding: 0 0.2em 0 0;
+      }
+.nav__list{
+  float: right;
+}
+  .nav__item{
+    float: left;
+    position: relative;
+  }
+    .nav__link{
+      display: block;
+      padding: 1em;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: $menu_font_s;
+      font-weight: 700;
+      color: $base_font_c;
+      @include transition($time);
+
+        &:hover{
+          color: $base_blue_c;
+          @include transition($time);
+        }
+    }
+
+   .nav__item{
+     &:hover > .sub-nav__list{
+       visibility: visible;
+       opacity: 1;
+       @include transition($time);
+     }
+   }
+
+  .sub-nav__list{
+    padding: 0;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    @include transition($time);
+  }
+    .sub-nav__item{
+
+    }
+      .sub-nav__link{
+        display: block;
+        padding: 1em;
+        text-decoration: none;
+        color: $base_font_c;
+        background: #D4D0C8;
+        @include transition($time);
+
+        &:hover{
+          color: #fff;
+          background: $base_blue_c;
+          @include transition($time);
+        }
+
+      }
