@@ -1,14 +1,15 @@
-section.slider
+section.slider.clearfix
     ul.slider__list
         li.slider__item
             .l-center
                 .slider__big-text
                     | Striving to excellence in everything we
+                    br
                     span.strong do for your success
                 .slider__text
                     p For those who are not ready to rest on laurels, our company organizes occupational up-grade trainings and business trainings. In 150 countries and 1050 cities we help people to improve their skills, to learn how to make a good career.
-                +btn('a','btn__trans_blue','Read more')
-        li.slider__item
+                +btn('a','btn__blue-trans-w','Read more')
+        //-li.slider__item
             .l-center
                 .slider__big-text
                     | Showing high technology solutions for
@@ -16,9 +17,10 @@ section.slider
                 .slider__text
                     p Have you ever faced a situation when you could not get the desired job only because you were inexperienced? Forget that awful feeling! Probations, that we provide, will help you to get valuable skills and, of course, special certificates for confirmation.
                 +btn('a','btn__trans_blue','Read more')
-    ul.slider-navi__list
-        li.slider-navi__item
-            a.slider-navi__link.slider-navi__link_active(href="#")
-        li.slider-navi__item
-            a.slider-navi__link(href="#")
+    .slider-navi
+        ul.slider-navi__list
+            li.slider-navi__item
+                a.slider-navi__link.slider-navi__link_active(href="#") &nbsp;
+            li.slider-navi__item
+                a.slider-navi__link(href="#") &nbsp;
 // end slider

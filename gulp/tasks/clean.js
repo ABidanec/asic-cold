@@ -11,7 +11,8 @@ module.exports = function () {
             'build/assets/css',
             '!build/assets/fonts',
             '!build/assets/img',
-            '!build/assets/pic'
+            '!build/assets/pic',
+            '!build/assets/js'
         ]);
     });
 };

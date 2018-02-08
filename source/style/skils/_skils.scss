@@ -1,0 +1,55 @@
+$skils_bg: #191919;
+
+.skils{
+  padding:2em 0;
+  background: $skils_bg;
+  color: #fff;
+}
+  .skils__item{
+    float: left;
+    width: 22%;
+    margin: 0 2% 2% 0;
+    text-align: center;
+  }
+    .skils__link{
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.25em;
+      @include transition($time);
+      &:hover{
+        color: $base_blue_c;
+        @include transition($time);
+      }
+    }
+
+// diagram styles
+.circle {
+  display: block;
+  float: left;
+}
+circle {
+  fill: rgba(26, 49, 56, 1);
+  stroke: #21BEE8;
+  stroke-width: 15px;
+  stroke-dasharray: 408px 408px;
+}
+circle:nth-child(2n) {
+  fill: #1A3138;
+  stroke: $skils_bg;
+  stroke-width: 130;
+}
+.l-circle{
+  display: block;
+  width: 160px;
+  height: 160px;
+  position: relative;
+  margin: 0 auto 2em;
+}
+.persent{
+  position: absolute;
+  top:41%;
+  left:31%;
+  color: #fff;
+  font-size: 2em;
+}
+// end diagram styles

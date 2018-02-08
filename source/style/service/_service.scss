@@ -1,0 +1,65 @@
+$services_bg: '../img/services_bg.jpg';
+$icon-block_w: 7.5em;
+$icon-block_h: $icon-block_w;
+.services{
+  background: url($services_bg) no-repeat top center;
+  background-size: cover;
+  padding:2em 0 4em 0;
+  color: #fff;
+  text-align: center;
+}
+  .services__item{
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    width:48%;
+    padding:0 1% 0 0;
+    margin: 0 0 2em 0;
+  }
+
+    .services__icon{
+      float: left;
+      position: relative;
+      width: $icon-block_w;
+      height: $icon-block_h;
+      font-family: $awesome_font;
+      background: $base_blue_c;
+      margin: 0 1em 0 0;
+
+      i{
+        font-style: normal;
+        &:before{
+          position: absolute;
+          font-size: 5em;
+          font-weight: 100;
+        }
+      }
+      i.fa-compass{
+        &:before{
+          top:10%;
+          left:20%;
+        }
+      }
+      i.fa-cube{
+        &:before{
+          top:10%;
+          left:19%;
+        }
+      }
+      i.fa-cogs{
+        &:before{
+          top:11%;
+          left:13%;
+        }
+      }
+      i.fa-briefcase{
+        &:before{
+          top:14%;
+          left:16%;
+        }
+      }
+    }
+
+    .services__head{
+      margin: 0 0 1em 0;
+    }

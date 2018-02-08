@@ -1,15 +1,19 @@
-section.blog
+section.blog.clearfix
     .l-center
         h2.section__head
             | From the
-            span.strong Blog
-        -var posts = ['56 enthusiasts began a probation','Our new home','Online course','Fall business-school','+1 step on the career ladder','Way to success']
-        -var desc = ["56 participants of GLOBY probation program will spend 3 months working at 24 famous companies and corporations, which are situated in 21 countries of the world. Wish them good luck!", "Since September 3 we have been waiting for our Ukrainian guests. Our new office was opened in Kyiv. We will be happy to meet you and to propose our help to you. Don't be afraid to begin a new happy life.","New GLOBY online-course is now accessible for all. If you don't have an opportunity to join our events, GLOBY online-program is a good opportunity for you. Watch video lessons, photograph useful information and evolve yourself together with us.","This year fall GLOBY business-school will join ambitious, purposeful people in New York. You can spend your time profitably with us from 26th October till 7th November. It's not late to register yet.","The 20th course of the up-grade program has just finished and 87 participants from 49 countries are now ready to move more masterfully on the career ladder. We are proud of our learners and sure that they will achieve their goals.","Arabian billionaire Mahomet Jaho will visit Moscow on 12-th October and, of course, we asked him to prosecute a lecture. He will gladly share his experience and secrets of becoming a successful businessman."]
-        -for(var i=0; i<posts.length; i++)
-            li.blog__item
-                img.blog__img(src="/assets/pic/blog/"+i+".jpg" alt="post "+i)
-                a.blog__link(href="#")= posts[i]
-                .blog__desc
-                    p= desc[i]
-        +btn('a','btn__trans_blue',"See all")
+            span.strong  Blog
+        .l-blog
+            -var posts = ['56 enthusiasts began a probation','Our new home','Online course','Fall business-school','+1 step on the career ladder','Way to success']
+            -var desc = ["56 participants of GLOBY probation program will spend 3 months working at 24 famous companies and corporations, which are situated in 21 countries of the world. Wish them good luck!", "Since September 3 we have been waiting for our Ukrainian guests. Our new office was opened in Kyiv. We will be happy to meet you and to propose our help to you. Don't be afraid to begin a new happy life.","New GLOBY online-course is now accessible for all. If you don't have an opportunity to join our events, GLOBY online-program is a good opportunity for you. Watch video lessons, photograph useful information and evolve yourself together with us.","This year fall GLOBY business-school will join ambitious, purposeful people in New York. You can spend your time profitably with us from 26th October till 7th November. It's not late to register yet.","The 20th course of the up-grade program has just finished and 87 participants from 49 countries are now ready to move more masterfully on the career ladder. We are proud of our learners and sure that they will achieve their goals.","Arabian billionaire Mahomet Jaho will visit Moscow on 12-th October and, of course, we asked him to prosecute a lecture. He will gladly share his experience and secrets of becoming a successful businessman."]
+            ul.blog__list
+                -for(var i=0; i<posts.length; i++)
+                    li.blog__item
+                        img.blog__img(src="/assets/pic/blog/"+i+".jpg" alt="post "+i)
+                        a.blog__link(href="#")= posts[i]
+                        .blog__desc
+                            if i === 2
+                                p 6 participants of GLOBY probation program will spend 3 months working
+                            p= desc[i]
+        +btn('a','btn__blue-trans-w',"See all")
 // end blog

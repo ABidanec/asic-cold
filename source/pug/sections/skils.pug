@@ -1,4 +1,4 @@
-section.skils
+section.skils.clearfix
     .l-center
         h2.section__head
             | The
@@ -9,7 +9,8 @@ section.skils
         ul.skils__list
             -for(var i=0; i<percents.length;i++)
                 li.skils__item
-                    .skils__diagram
-                    .skils__percent= percents[i]
+                    .l-circle
+                        .circle= percents[i]
+                        span.persent= percents[i]
                     a.skils__link(href="#")= texts[i]
 // end skils

@@ -24,3 +24,24 @@
     @include transition($time);
   }
 }
+
+.btn__blue-trans-b{
+  @extend .btn_blue;
+
+  &:hover{
+    background: none;
+    color: $base_blue_c;
+    border: 1px solid $base_blue_c;
+    @include transition($time);
+  }
+}
+
+.btn__blue-trans-w{
+  @extend .btn_blue;
+
+  &:hover{
+    background: none;
+    border: 1px solid #fff;
+    @include transition($time);
+  }
+}

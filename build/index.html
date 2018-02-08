@@ -9,8 +9,7 @@
     <link href="/assets/fonts/lato/stylesheet.css" rel="stylesheet">
     <link href="/assets/fonts/gruppo/stylesheet.css" rel="stylesheet">
     <link href="/assets/fonts/droid-sans/stylesheet.css" rel="stylesheet">
-    <link href="/assets/fonts/fontAwesome/css/fontawesome.css" rel="stylesheet">
-    <link href="/assets/fonts/fontAwesome/css/fa-regular.css" rel="stylesheet">
+    <link href="/assets/fonts/fontAwesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="/assets/css/main.css" rel="stylesheet">
   </head>
   <body>
@@ -136,21 +135,22 @@
         </div>
       </section>
       <!-- end team-->
-      <section class="services">
+      <section class="services clearfix">
         <div class="l-center">
-          <h2 class="section__head">Our<span class="strong">Services</span></h2>
+          <h2 class="section__head">Our<span class="strong"> Services</span></h2>
           <ul class="services__list">
             <li class="services__item">
-              <div class="services__icon.services__icon_compass"></div>
+              <div class="services__icon"><i class="far fa-compass"></i></div>
               <div class="services__cont">
                 <h3 class="services__head">Probation program</h3>
                 <div class="services__desc">
+                  <p>If you want to get a good job, but do not have enough experience - join</p>
                   <p>If you want to get a good job, but do not have enough experience - join GLOBY probation program. Our specialists will help you find and choose a probation in big corporations and famous companies, according to your wishes and needs.</p>
                 </div>
               </div>
             </li>
             <li class="services__item">
-              <div class="services__icon.services__icon_cube"></div>
+              <div class="services__icon"><i class="far fa-cube"></i></div>
               <div class="services__cont">
                 <h3 class="services__head">Up-grade program</h3>
                 <div class="services__desc">
@@ -159,7 +159,7 @@
               </div>
             </li>
             <li class="services__item">
-              <div class="services__icon.services__icon_cogs"></div>
+              <div class="services__icon"><i class="far fa-cogs"></i></div>
               <div class="services__cont">
                 <h3 class="services__head">Business-creation program</h3>
                 <div class="services__desc">
@@ -168,7 +168,7 @@
               </div>
             </li>
             <li class="services__item">
-              <div class="services__icon.services__icon_briefcase"></div>
+              <div class="services__icon"><i class="far fa-briefcase"></i></div>
               <div class="services__cont">
                 <h3 class="services__head">Outplacement program</h3>
                 <div class="services__desc">
@@ -177,16 +177,17 @@
               </div>
             </li>
           </ul>
-          <a class="btn__trans-blue" href="#">Read more</a>
+          <a class="btn__blue-trans-w" href="#">Read more</a>
         </div>
       </section>
       <!-- end services-->
-      <section class="testimonials">
+      <section class="testimonials clearfix">
         <div class="l-center">
+          <h2 class="section__head">Testimonials</h2>
           <ul class="testimonials__list">
             <li class="testimonials__item">
               <div class="testimonials__photo">
-                <div class="l-testimonials__photo"><img class="testimonials__img" src="/assets/pic/testimonials/federicoBlancato.ipg" alt="Federico Blancato, Italy"></div>
+                <div class="l-testimonials__photo"><img class="testimonials__img" src="/assets/pic/testimonials/federicoBlancato.png" alt="Federico Blancato, Italy"></div>
               </div>
               <div class="testimonials__content">
                 <h3>Federico Blancato, Italy</h3>
@@ -195,7 +196,7 @@
             </li>
             <li class="testimonials__item">
               <div class="testimonials__photo">
-                <div class="l-testimonials__photo"><img class="testimonials__img" src="/assets/pic/testimonials/arsenAkopyan.ipg" alt="Arsen Akopyan, Russia"></div>
+                <div class="l-testimonials__photo"><img class="testimonials__img" src="/assets/pic/testimonials/arsenAkopyan.png" alt="Arsen Akopyan, Russia"></div>
               </div>
               <div class="testimonials__content">
                 <h3>Arsen Akopyan, Russia</h3>
@@ -203,110 +204,118 @@
               </div>
             </li>
           </ul>
-          <a class="btn__trans_blue" href="#">Read more</a>
+          <a class="btn__blue-trans-b" href="#">Read more</a>
         </div>
       </section>
       <!-- testimonials-->
-      <section class="slider">
+      <section class="slider clearfix">
         <ul class="slider__list">
           <li class="slider__item">
             <div class="l-center">
-              <div class="slider__big-text">Striving to excellence in everything we<span class="strong">do for your success</span></div>
+              <div class="slider__big-text">Striving to excellence in everything we<br><span class="strong">do for your success</span></div>
               <div class="slider__text">
                 <p>For those who are not ready to rest on laurels, our company organizes occupational up-grade trainings and business trainings. In 150 countries and 1050 cities we help people to improve their skills, to learn how to make a good career.</p>
               </div>
-              <a class="btn__trans_blue" href="#">Read more</a>
-            </div>
-          </li>
-          <li class="slider__item">
-            <div class="l-center">
-              <div class="slider__big-text">Showing high technology solutions for<span class="strong">businesses and organizations</span></div>
-              <div class="slider__text">
-                <p>Have you ever faced a situation when you could not get the desired job only because you were inexperienced? Forget that awful feeling! Probations, that we provide, will help you to get valuable skills and, of course, special certificates for confirmation.</p>
-              </div>
-              <a class="btn__trans_blue" href="#">Read more</a>
+              <a class="btn__blue-trans-w" href="#">Read more</a>
             </div>
           </li>
         </ul>
-        <ul class="slider-navi__list">
-          <li class="slider-navi__item"><a class="slider-navi__link slider-navi__link_active" href="#"></a></li>
-          <li class="slider-navi__item"><a class="slider-navi__link" href="#"></a></li>
-        </ul>
+        <div class="slider-navi">
+          <ul class="slider-navi__list">
+            <li class="slider-navi__item"><a class="slider-navi__link slider-navi__link_active" href="#">&nbsp;</a></li>
+            <li class="slider-navi__item"><a class="slider-navi__link" href="#">&nbsp;</a></li>
+          </ul>
+        </div>
       </section>
       <!-- end slider-->
-      <section class="skils">
+      <section class="skils clearfix">
         <div class="l-center">
           <h2 class="section__head">The<span class="strong"> Skils</span></h2>
           <ul class="skils__list">
             <li class="skils__item">
-              <div class="skils__diagram"></div>
-              <div class="skils__percent">85%</div><a class="skils__link" href="#">of our trainees have got a prestigious job</a>
+              <div class="l-circle">
+                <div class="circle">85%</div><span class="persent">85%</span>
+              </div><a class="skils__link" href="#">of our trainees have got a prestigious job</a>
             </li>
             <li class="skils__item">
-              <div class="skils__diagram"></div>
-              <div class="skils__percent">75%</div><a class="skils__link" href="#">participants established successful business</a>
+              <div class="l-circle">
+                <div class="circle">75%</div><span class="persent">75%</span>
+              </div><a class="skils__link" href="#">participants established successful business</a>
             </li>
             <li class="skils__item">
-              <div class="skils__diagram"></div>
-              <div class="skils__percent">90%</div><a class="skils__link" href="#">have got an ascent</a>
+              <div class="l-circle">
+                <div class="circle">90%</div><span class="persent">90%</span>
+              </div><a class="skils__link" href="#">have got an ascent</a>
             </li>
             <li class="skils__item">
-              <div class="skils__diagram"></div>
-              <div class="skils__percent">35%</div><a class="skils__link" href="#">have already earned their first million</a>
+              <div class="l-circle">
+                <div class="circle">35%</div><span class="persent">35%</span>
+              </div><a class="skils__link" href="#">have already earned their first million</a>
             </li>
           </ul>
         </div>
       </section>
       <!-- end skils-->
-      <section class="portfolio">
+      <section class="portfolio clearfix">
         <div class="l-center">
           <h2 class="section__head">Our<span class="strong"> Portfolio</span></h2>
-          <ul class="portfolio__list">
-            <li class="portfolio__item"><a class="portfolio__link"><img class="portfolio__img" src="/assets/pic/portfolio/1.jpg" alt="portfolio 1"></a></li>
-            <li class="portfolio__item"><a class="portfolio__link"><img class="portfolio__img" src="/assets/pic/portfolio/2.jpg" alt="portfolio 2"></a></li>
-            <li class="portfolio__item"><a class="portfolio__link"><img class="portfolio__img" src="/assets/pic/portfolio/3.jpg" alt="portfolio 3"></a></li>
-            <li class="portfolio__item"><a class="portfolio__link"><img class="portfolio__img" src="/assets/pic/portfolio/4.jpg" alt="portfolio 4"></a></li>
-            <li class="portfolio__item"><a class="portfolio__link"><img class="portfolio__img" src="/assets/pic/portfolio/5.jpg" alt="portfolio 5"></a></li>
-            <li class="portfolio__item"><a class="portfolio__link"><img class="portfolio__img" src="/assets/pic/portfolio/6.jpg" alt="portfolio 6"></a></li>
+          <ul class="portfolio__list clearfix">
+            <li class="portfolio__item"><a class="portfolio__link" href="#"><img class="portfolio__img" src="/assets/pic/portfolio/1.jpg" alt="portfolio 1">
+                <div class="portfolio__mask"></div></a></li>
+            <li class="portfolio__item"><a class="portfolio__link" href="#"><img class="portfolio__img" src="/assets/pic/portfolio/2.jpg" alt="portfolio 2">
+                <div class="portfolio__mask"></div></a></li>
+            <li class="portfolio__item"><a class="portfolio__link" href="#"><img class="portfolio__img" src="/assets/pic/portfolio/3.jpg" alt="portfolio 3">
+                <div class="portfolio__mask"></div></a></li>
+            <li class="portfolio__item"><a class="portfolio__link" href="#"><img class="portfolio__img" src="/assets/pic/portfolio/4.jpg" alt="portfolio 4">
+                <div class="portfolio__mask"></div></a></li>
+            <li class="portfolio__item"><a class="portfolio__link" href="#"><img class="portfolio__img" src="/assets/pic/portfolio/5.jpg" alt="portfolio 5">
+                <div class="portfolio__mask"></div></a></li>
+            <li class="portfolio__item"><a class="portfolio__link" href="#"><img class="portfolio__img" src="/assets/pic/portfolio/6.jpg" alt="portfolio 6">
+                <div class="portfolio__mask"></div></a></li>
           </ul>
-          <a class="btn__trans_blue" href="#">See all</a>
+          <a class="btn__blue-trans-w" href="#">See all</a>
         </div>
       </section>
       <!-- end portfolio-->
-      <section class="blog">
+      <section class="blog clearfix">
         <div class="l-center">
-          <h2 class="section__head">From the<span class="strong">Blog</span></h2>
-          <li class="blog__item"><img class="blog__img" src="/assets/pic/blog/0.jpg" alt="post 0"><a class="blog__link" href="#">56 enthusiasts began a probation</a>
-            <div class="blog__desc">
-              <p>56 participants of GLOBY probation program will spend 3 months working at 24 famous companies and corporations, which are situated in 21 countries of the world. Wish them good luck!</p>
-            </div>
-          </li>
-          <li class="blog__item"><img class="blog__img" src="/assets/pic/blog/1.jpg" alt="post 1"><a class="blog__link" href="#">Our new home</a>
-            <div class="blog__desc">
-              <p>Since September 3 we have been waiting for our Ukrainian guests. Our new office was opened in Kyiv. We will be happy to meet you and to propose our help to you. Don't be afraid to begin a new happy life.</p>
-            </div>
-          </li>
-          <li class="blog__item"><img class="blog__img" src="/assets/pic/blog/2.jpg" alt="post 2"><a class="blog__link" href="#">Online course</a>
-            <div class="blog__desc">
-              <p>New GLOBY online-course is now accessible for all. If you don't have an opportunity to join our events, GLOBY online-program is a good opportunity for you. Watch video lessons, photograph useful information and evolve yourself together with us.</p>
-            </div>
-          </li>
-          <li class="blog__item"><img class="blog__img" src="/assets/pic/blog/3.jpg" alt="post 3"><a class="blog__link" href="#">Fall business-school</a>
-            <div class="blog__desc">
-              <p>This year fall GLOBY business-school will join ambitious, purposeful people in New York. You can spend your time profitably with us from 26th October till 7th November. It's not late to register yet.</p>
-            </div>
-          </li>
-          <li class="blog__item"><img class="blog__img" src="/assets/pic/blog/4.jpg" alt="post 4"><a class="blog__link" href="#">+1 step on the career ladder</a>
-            <div class="blog__desc">
-              <p>The 20th course of the up-grade program has just finished and 87 participants from 49 countries are now ready to move more masterfully on the career ladder. We are proud of our learners and sure that they will achieve their goals.</p>
-            </div>
-          </li>
-          <li class="blog__item"><img class="blog__img" src="/assets/pic/blog/5.jpg" alt="post 5"><a class="blog__link" href="#">Way to success</a>
-            <div class="blog__desc">
-              <p>Arabian billionaire Mahomet Jaho will visit Moscow on 12-th October and, of course, we asked him to prosecute a lecture. He will gladly share his experience and secrets of becoming a successful businessman.</p>
-            </div>
-          </li>
-          <a class="btn__trans_blue" href="#">See all</a>
+          <h2 class="section__head">From the<span class="strong"> Blog</span></h2>
+          <div class="l-blog">
+            <ul class="blog__list">
+              <li class="blog__item"><img class="blog__img" src="/assets/pic/blog/0.jpg" alt="post 0"><a class="blog__link" href="#">56 enthusiasts began a probation</a>
+                <div class="blog__desc">
+                  <p>56 participants of GLOBY probation program will spend 3 months working at 24 famous companies and corporations, which are situated in 21 countries of the world. Wish them good luck!</p>
+                </div>
+              </li>
+              <li class="blog__item"><img class="blog__img" src="/assets/pic/blog/1.jpg" alt="post 1"><a class="blog__link" href="#">Our new home</a>
+                <div class="blog__desc">
+                  <p>Since September 3 we have been waiting for our Ukrainian guests. Our new office was opened in Kyiv. We will be happy to meet you and to propose our help to you. Don't be afraid to begin a new happy life.</p>
+                </div>
+              </li>
+              <li class="blog__item"><img class="blog__img" src="/assets/pic/blog/2.jpg" alt="post 2"><a class="blog__link" href="#">Online course</a>
+                <div class="blog__desc">
+                  <p>6 participants of GLOBY probation program will spend 3 months working</p>
+                  <p>New GLOBY online-course is now accessible for all. If you don't have an opportunity to join our events, GLOBY online-program is a good opportunity for you. Watch video lessons, photograph useful information and evolve yourself together with us.</p>
+                </div>
+              </li>
+              <li class="blog__item"><img class="blog__img" src="/assets/pic/blog/3.jpg" alt="post 3"><a class="blog__link" href="#">Fall business-school</a>
+                <div class="blog__desc">
+                  <p>This year fall GLOBY business-school will join ambitious, purposeful people in New York. You can spend your time profitably with us from 26th October till 7th November. It's not late to register yet.</p>
+                </div>
+              </li>
+              <li class="blog__item"><img class="blog__img" src="/assets/pic/blog/4.jpg" alt="post 4"><a class="blog__link" href="#">+1 step on the career ladder</a>
+                <div class="blog__desc">
+                  <p>The 20th course of the up-grade program has just finished and 87 participants from 49 countries are now ready to move more masterfully on the career ladder. We are proud of our learners and sure that they will achieve their goals.</p>
+                </div>
+              </li>
+              <li class="blog__item"><img class="blog__img" src="/assets/pic/blog/5.jpg" alt="post 5"><a class="blog__link" href="#">Way to success</a>
+                <div class="blog__desc">
+                  <p>Arabian billionaire Mahomet Jaho will visit Moscow on 12-th October and, of course, we asked him to prosecute a lecture. He will gladly share his experience and secrets of becoming a successful businessman.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <a class="btn__blue-trans-w" href="#">See all</a>
         </div>
       </section>
       <!-- end blog-->
@@ -398,5 +407,9 @@
         <p>Globy © 2016 | Privacy Policy</p>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
+    <script src="/assets/js/diagram.js"></script>
+    <script src="/assets/js/masonry.js"></script>
   </body>
 </html>
