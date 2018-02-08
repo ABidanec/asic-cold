@@ -1,0 +1,26 @@
+.contacts{
+  padding:2em 0;
+  text-align: center;
+}
+  .contacts__address{
+    margin: 0 0 1em 0;
+  }
+  .contacts-phone__item{
+    margin: 0 0 0.5em 0;
+  }
+    .contacts-phone__link{
+      text-decoration: none;
+      font-weight:700;
+      color: $base_font_c;
+      @include transition($time);
+      &:hover{
+        color: $base_blue_c;
+        @include transition($time);
+      }
+    }
+  .contacts-email__item{
+    @extend .contacts-phone__item;
+  }
+    .contacts-email__link{
+      @extend .contacts-phone__link;
+    }

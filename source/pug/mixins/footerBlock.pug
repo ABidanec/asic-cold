@@ -2,8 +2,9 @@
 //- head заголовок блока
 //- linksArray массив названий ссылок
 mixin footerBlock(head, linksArray)
-    h3.footer-block__head=head
-    ul.footer-block__list
-        -for(var i=0;i<linksArray.length;i++)
-            li.footer-block__item
-                a.footer-block__link(href="#")= linksArray[i]
+    .l-footer-block
+        h3.footer-block__head=head
+        ul.footer-block__list
+            -for(var i=0;i<linksArray.length;i++)
+                li.footer-block__item
+                    a.footer-block__link(href="#")= linksArray[i]

@@ -1,0 +1,26 @@
+$border-radius_input: 5px;
+.left-form-field,
+.right-form-field{
+  float:left;
+  width:48%;
+  padding:0 2% 0 0;
+}
+  .contacts-form__input,
+  .contacts-form__textarea{
+    width: 100%;
+    margin: 0 0 1em 0;
+    color: $base_blue_c;
+    padding:1.3125em 0.3125em;
+    border:1px solid $border-input_c;
+    @include border-radius($border-radius_input, $border-radius_input, $border-radius_input, $border-radius_input);
+  }
+  .contacts-form__textarea{
+    min-height: 10.8em;
+  }
+  .contacts-form__reset{
+    float: right;
+  }
+  .contacts-form__send{
+    float: left;
+    margin:0 0 0 0.7em;
+  }

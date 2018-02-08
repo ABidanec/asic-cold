@@ -46,6 +46,7 @@ html, body{
 }
 
 .footer{
+  position: relative;
   height:$footer_h;
   margin: -$footer_h 0 0;
   zoom: 1;
@@ -70,3 +71,5 @@ ul{
 .blue-c{
   color: $base_blue_c;
 }
+
+@include placeholder-color($base_blue_c);
