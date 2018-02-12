@@ -1,0 +1,37 @@
+.scroll-top{
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  width: 3em;
+  height: 3em;
+  @include border-radius(50%, 50%, 50%, 50%);
+  overflow: hidden;
+  background: $base_blue_c;
+  z-index: 1000;
+  @include transition($time);
+  &:hover{
+    background: #1CA4C9;
+    @include transition($time);
+  }
+}
+
+.scroll-top__link{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+
+  &:hover{
+    color: #fff;
+  }
+
+  .fa{
+    position: absolute;
+    top: 13%;
+    left: 30%;
+    font-size: 2em;
+  }
+}
