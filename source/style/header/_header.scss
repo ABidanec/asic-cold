@@ -61,6 +61,7 @@ $menu_font_s: 1.3125em;
     visibility: hidden;
     opacity: 0;
     @include transition($time);
+    z-index: 100;
   }
     .sub-nav__item{
 
@@ -80,3 +81,10 @@ $menu_font_s: 1.3125em;
         }
 
       }
+//- slick meunu
+.l-nav{
+  display: none;
+  text-align: center;
+  margin: 0 0 1em 0;
+}
+//- end slick menu
