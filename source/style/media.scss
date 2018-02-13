@@ -23,6 +23,56 @@
   .nav__link{
     font-size: 0.75em;
   }
+
+  /*about*/
+  .about__item{
+    width: 45%;
+    border: none;
+  }
+  /*end about*/
+
+  /*team*/
+  .team__item{
+    width: 45%;
+  }
+  /*end team*/
+
+  /*services*/
+  .services__item{
+    width: 95%;
+  }
+  /*end services*/
+  /*testimonials*/
+  .testimonials__item{
+    width: 95%;
+    margin: 0 0 2em 0;
+  }
+  /*end testimonials*/
+  /*skils*/
+  .skils__item{
+    width: 45%;
+    margin: 0 0 2em 0;
+  }
+  /*end skils*/
+  /*portfolio*/
+  .portfolio__item{
+    width: 50%;
+  }
+  /*end portfolio*/
+  /*blog*/
+  .blog__list{
+    column-count: 2;
+  }
+  /*end blog*/
+  /*footer*/
+  .l-footer-block{
+    width: 48%;
+  }
+  .footer-block__item{
+    float: left;
+    padding:0 1em;
+  }
+  /*end footer*/
 }
 
 /* Small Devices, Tablets */
@@ -75,7 +125,48 @@
       color: #333;
     }
   }
-
+  /*about*/
+  .about__item{
+    width: 100%;
+  }
+  /*end about*/
+  /*team*/
+  .team__item{
+    width: 100%;
+  }
+  /*end team*/
+  /*skils*/
+  .skils__item{
+    width: 100%;
+  }
+  /*end skils*/
+  /*portfolio*/
+  .portfolio__item{
+    width: 100%;
+  }
+  /*end portfolio*/
+  /*blog*/
+  .blog__list{
+    column-count: 1;
+  }
+  /*end blog*/
+  /*contacts*/
+  .left-form-field,
+  .right-form-field{
+    width: 100%;
+  }
+  /*end contacts*/
+  /*footer*/
+  .l-footer-block{
+    width: 100%;
+  }
+    .footer-block__item{
+      margin: 0 0 0.1em 0;
+    }
+      .footer-block__head{
+        display: none;
+      }
+  /*end footer*/
 }
 
 /* Extra Small Devices, Phones */
