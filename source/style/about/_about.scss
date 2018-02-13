@@ -5,11 +5,16 @@ $about_bg: '../img/about_bg.jpg';
   padding: 2em 0;
 }
   .about__item{
+    position: relative;
     float: left;
     vertical-align: top;
     width: 20%;
-    padding: 2%;
+    padding: 2% 2% 6% 2%;
     border-left: 1px solid #fff;
+      .btn_blue_gray{
+        position: absolute;
+        bottom: 0;
+      }
   }
     .about__item-num{
       display: block;

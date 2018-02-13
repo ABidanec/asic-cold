@@ -11,13 +11,15 @@ $(document).ready(function(){
 
     Circle('.circle');
 
+    _moduleSlider.action();
     _moduleSlickMenu.action();
-    //_moduleSlider.action();
     _scrollToTop.action();
+    _moduleEqualsHeight.action(".about__list");
+    _moduleEqualsHeight.action(".team__list");
 
 });
 
-_moduleSlickMenu = (function(){
+var _moduleSlickMenu = (function(){
     var _topMenu = $('.nav__list'),
         _prependTo = '.l-nav',
         _labelTopMenu = '';
@@ -28,39 +30,25 @@ _moduleSlickMenu = (function(){
                 label: _labelTopMenu,
                prependTo: _prependTo
             });
-            console.log('slick nav');
         }
     }
 })();
 
-_moduleSlider = (function(){
-    var _slider = $('.slider__list');
+var _moduleSlider = (function(){
 
+    var _slider = $(".slider__list");
     return {
         action: function(){
             _slider.slick({
-                dots: true,
                 autoplay: true,
-                autoplaySpeed: 1000,
-                fade: true,
-                pauseOnHover: true,
-                adaptiveHeight: true,
-                arrows: false,
-                draggable: true,
-                responsive: [
-                    {
-                        breakpoint: 600,
-                        settings: {
-                            dots: false
-                        }
-                    }
-                ]
+                autoplaySpeed: 3000
             });
+            console.log("slider");
         }
     }
 })();
 
-_scrollToTop = (function(){
+var _scrollToTop = (function(){
     var scroll = $(".scroll-top"),
         top = 300,
         delay = 800;
@@ -84,4 +72,24 @@ _scrollToTop = (function(){
         }
     }
 })();
+
+var _moduleEqualsHeight = (function(){
+    return {
+        action: function(container){
+            var children = $(container).children(),
+                maxHeight = 0;
+            for(var i = 0; i < children.length; i++){
+                var temp = $(children[i]).height();
+                if (maxHeight < temp){
+                    maxHeight = temp;
+                }
+            }
+            for(var i = 0; i < children.length; i++){
+                $(children[i]).height(maxHeight);
+            }
+        }
+    }
+})();
+
+
 

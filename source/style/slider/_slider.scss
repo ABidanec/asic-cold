@@ -6,7 +6,13 @@ $slider_bg: '../img/slider_bg.jpg';
   color: #fff;
   padding: 2em 0;
 }
+.slider__list{
+  display: block;
+  width: 100%;
+  padding: 0;
+}
   .slider__item{
+    position: relative;
     width: 80%;
     margin: 0 auto 3em;
   }

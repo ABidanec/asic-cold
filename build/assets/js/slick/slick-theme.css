@@ -1,4 +1,4 @@
-.slick-dots@charset 'UTF-8';
+@charset 'UTF-8';
 /* Slider */
 .slick-loading .slick-list
 {
@@ -18,8 +18,7 @@
 /* Arrows */
 .slick-prev,
 .slick-next
-{   
-    
+{
     font-size: 0;
     line-height: 0;
 
@@ -41,7 +40,6 @@
     border: none;
     outline: none;
     background: transparent;
-    z-index: 10000;
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -68,12 +66,12 @@
 .slick-prev:before,
 .slick-next:before
 {
-    font-family: 'FontAwesome';
-    font-size: 40px;
+    font-family: 'slick';
+    font-size: 20px;
     line-height: 1;
 
     opacity: .75;
-    color: #333;
+    color: white;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -81,38 +79,38 @@
 
 .slick-prev
 {
-    left: 5%;
+    left: -25px;
 }
 [dir='rtl'] .slick-prev
 {
-    right: 5%;
+    right: -25px;
     left: auto;
 }
 .slick-prev:before
 {
-    content: "\f053";
+    content: '←';
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: "\f053";
+    content: '→';
 }
 
 .slick-next
 {
-    right: 5%;
+    right: -25px;
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: 5%;
+    left: -25px;
 }
 .slick-next:before
 {
-    content: "\f054";
+    content: '→';
 }
 [dir='rtl'] .slick-next:before
 {
-    content: "\f054";
+    content: '←';
 }
 
 /* Dots */
@@ -124,11 +122,11 @@
 .slick-dots
 {
     position: absolute;
-    bottom: -7%;
-    left: 5%;
+    bottom: -25px;
 
-    display: inline;
+    display: block;
 
+    width: 100%;
     padding: 0;
     margin: 0;
 
@@ -176,12 +174,11 @@
 .slick-dots li button:focus:before
 {
     opacity: 1;
-    color: #df9e5d;
 }
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 20px;
+    font-size: 6px;
     line-height: 20px;
 
     position: absolute;
@@ -194,14 +191,14 @@
     content: '•';
     text-align: center;
 
-    opacity: 1;
-    color: #333;
+    opacity: .25;
+    color: black;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 .slick-dots li.slick-active button:before
 {
-    opacity: 1;
-    color: #df9e5d;
+    opacity: .75;
+    color: black;
 }
