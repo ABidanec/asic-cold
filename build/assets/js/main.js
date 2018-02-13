@@ -40,10 +40,23 @@ var _moduleSlider = (function(){
     return {
         action: function(){
             _slider.slick({
+                dots: true,
                 autoplay: true,
-                autoplaySpeed: 3000
+                autoplaySpeed: 3000,
+                fade: true,
+                pauseOnHover: true,
+                adaptiveHeight: true,
+                arrows: false,
+                draggable: true,
+                responsive: [
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            dots: false
+                        }
+                    }
+                ]
             });
-            console.log("slider");
         }
     }
 })();
