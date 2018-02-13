@@ -1,0 +1,33 @@
+.content{
+  padding: 1em 1em 2em 1em;
+}
+
+  .content__img_center{
+    width: 100%;
+    margin: 0 0 1em 0;
+  }
+
+  .content__img_left{
+    float: left;
+    width: 31%;
+    margin: 0 1% 1% 0;
+  }
+
+  .content__img_right{
+     float: right;
+     width: 31%;
+     margin: 0 0 1% 1%;
+  }
+
+  .content{
+    ul{
+      padding: 0 0 0 1em;
+      margin: 0 0 0 1em;
+      list-style: disc;
+      ul{
+        padding: 0 0 0 1em;
+        margin: 0 0 0 1em;
+        list-style: circle;
+      }
+    }
+  }

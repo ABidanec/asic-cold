@@ -167,7 +167,12 @@
         display: none;
       }
   /*end footer*/
-
+  /*inner*/
+  .content__img_left,
+  .content__img_right{
+    width: 98%;
+  }
+  /*end inner*/
 }
 
 /* Extra Small Devices, Phones */

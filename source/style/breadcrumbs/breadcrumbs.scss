@@ -1,0 +1,30 @@
+.breadcrumbs{
+  padding: 1em 0;
+}
+  .breadcrumbs__item{
+    float: left;
+    padding: 0 0 0 0.5em;
+    &:first-child{
+      padding: 0;
+    }
+    &:after{
+      content: "\f105";
+      font-family: $awesome_font;
+      padding: 0 0.5em;
+    }
+    &:last-child:after{
+      content: "";
+    }
+  }
+    .breadcrumbs__link{
+        font-weight: 700;
+        text-decoration: none;
+        @include transition($time);
+        &:hover{
+          color: #1CA4C9;
+          @include transition($time);
+        }
+    }
+    .breadcrumbs__this{
+      font-weight: 700;
+    }
