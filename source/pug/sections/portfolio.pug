@@ -6,7 +6,7 @@ section.portfolio.clearfix
         ul.portfolio__list.clearfix
             -for(var i=1; i<7; i++)
                 li.portfolio__item
-                    a.portfolio__link(href="#")
+                    a.portfolio__link(href="/assets/pic/portfolio/"+i+".jpg" data-lightbox="example-set")
                         img.portfolio__img(src="/assets/pic/portfolio/"+i+".jpg", alt="portfolio "+i+"")
                         .portfolio__mask
         +btn('a','btn__blue-trans-w','See all')
